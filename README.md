@@ -1,5 +1,4 @@
 # MentalHealth_WepApp
-# Mental Health Prediction Web App
 
 ## Overview
 The **Mental Health Prediction Web App** is a multi-model machine learning application designed to assess and predict mental well-being based on various lifestyle, psychological, and work-related factors. The app predicts:
