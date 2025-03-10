@@ -3,15 +3,16 @@ import pickle
 import numpy as np
 import pandas as pd
 import os
+import joblib 
 
 print("Current working directory:", os.getcwd())
 print("Files in directory:", os.listdir())
 
 # Define paths for all model files
-stress_model_path = os.path.join(os.path.dirname(__file__), "stress_model.pkl")
-depression_model_path = os.path.join(os.path.dirname(__file__), "depression_model.pkl")
-burnout_model_path = os.path.join(os.path.dirname(__file__), "burnout_model.pkl")
-wellness_model_path = os.path.join(os.path.dirname(__file__), "wellness_model.pkl")
+stress_model = joblib.load('stress_model.joblib')
+anxiety_model = joblib.load('anxiety_model.joblib')
+depression_model = joblib.load('depression_model.joblib')
+disorder_model = joblib.load('disorder_model.joblib')
 
 # Helper functions for type conversion and validation
 def convert_binary_response(value):
